@@ -64,6 +64,9 @@
 
 
 ## Technologies Used
+* Python 3.8.6
+* HTML
+* Flask
 
 
 ## Testing
@@ -85,6 +88,7 @@
 
     
 ### Bugs
+* Initially the Procfile was not being picked up when trying to create the app on Heroku. To fix, the file type encoding has been changed from UTF-16 to UTF-8.
 
 
 ## Deployment
