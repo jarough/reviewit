@@ -6,12 +6,20 @@
 <!-- Bootstrap Text Form Code -->
 <form method="POST" action="">
     <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <label for="book_name" class="form-label">Book Name</label>
+        <input type="text" name="book_name" class="form-control" id="book_name" required>
     </div>
     <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+        <label for="release_year" class="form-label">Release Year</label>
+        <input type="text" name="release_year" class="form-control" id="release_year" required>
+    </div>
+    <div class="mb-3">
+        <label for="author" class="form-label">Author</label>
+        <input type="text" name="author" class="form-control" id="author" required>
+    </div>
+    <div class="mb-3">
+        <label for="summary">Book Summary</label>
+        <textarea class="form-control" id="summary" rows="3" name="summary" required></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
