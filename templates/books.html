@@ -22,8 +22,10 @@
             </div>
           </div>
           <div class="col-3">
-            <a href="" class="btn btn-dark">Edit</a>
-            <a href="" class="btn btn-dark">Close</a>
+            {% if session.user|lower == book.created_by|lower %}
+            <a href="{{ url_for('editbook', book_id=book._id) }}" class="btn btn-dark">Edit</a>
+            <a href="{{ url_for('deletebook', book_id=book._id) }}" class="btn btn-danger">Delete</a>
+            {% endif %}
         </div>
         </div>
         {% endfor %}

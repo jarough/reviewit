@@ -90,5 +90,29 @@ def addbook():
     
     return render_template("addbook.html")
 
+@app.route("/editbook/<book_id>", methods=["GET", "POST"])
+def editbook(book_id):
+    if request.method == "POST":
+        booksubmit = {
+            "book_name": request.form.get("book_name"),
+            "release_year": request.form.get("release_year"),
+            "author": request.form.get("author"),
+            "summary": request.form.get("summary"),
+            "created_by": session["user"]
+        }
+        mongo.books.replace_one({"_id": ObjectId(book_id)}, booksubmit)
+        flash("Book updated succesfully!")
+
+    book = mongo.books.find_one({"_id": ObjectId(book_id)})
+    return render_template("editbook.html", book=book)
+
+@app.route("/deletebook/<book_id>")
+def deletebook(book_id):
+    mongo.books.delete_one({"_id": ObjectId(book_id)})
+    flash("Book successfully deleted")
+    return redirect(url_for("get_books"))
+
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"), port=int(os.environ.get("PORT")), debug=True)
