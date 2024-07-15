@@ -3,6 +3,7 @@ h2 {
     margin: auto;
     text-align: center;
     padding-bottom: 50px;
+    color: #052c65
 }
 
 h3 {
@@ -11,6 +12,19 @@ h3 {
 
 p {
     align-content: center;
+    margin: 10px;
+}
+
+
+strong {
+    font-size: large;
+    text-align: center;
+    margin-left: auto;
+    padding: 5px;
+}
+
+.title {
+    font-size: xx-large;
 }
 
 /* register card */
@@ -19,6 +33,11 @@ p {
     align-items: center;
     text-align: center;
     margin: auto;
+}
+
+.year {
+    font-size: small;
+    color: #052c65;
 }
 
 button {
