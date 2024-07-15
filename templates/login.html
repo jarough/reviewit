@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2>Register</h2>
+<h2>Log In</h2>
 
 <!-- Bootstrap Card -->
 <div class="card">
-    <form class="card-body" method="POST" action="{{ url_for('register') }}">
+    <form class="card-body" method="POST" action="{{ url_for('login') }}">
         <div class="row">
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
@@ -19,7 +19,7 @@
                 <div id="passwordHelp" class="form-text">We'll never share your password with anyone else.</div>
             </div>
             <div class="row">
-                <button type="submit" class="btn btn-primary">Register</button>
+                <button type="submit" class="btn btn-primary">Log In</button>
             </div>
         </div>
     </form>
@@ -27,8 +27,8 @@
 
 <div class="row">
     <p>
-        Already have an account?
-        <a href="{{ url_for('login') }}">Log In</a>
+        Don't already have an account?
+        <a href="{{ url_for('register') }}">Register here</a>
     </p>
 </div>
 

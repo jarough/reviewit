@@ -9,6 +9,10 @@ h3 {
     align-items: center;
 }
 
+p {
+    align-content: center;
+}
+
 /* register card */
 .card {
     width: 18rem;
@@ -20,4 +24,9 @@ h3 {
 .btn {
     align-items: center;
     padding-left: 10px;
+}
+
+.flashes {
+    text-align: center;
+    padding-bottom: 20px;
 }
