@@ -19,7 +19,7 @@ mongo = PyMongo(app).cx["task_manager"]
 @app.route("/get_books")
 
 def get_books():
-    books = mongo.books.find()
+    books = list(mongo.books.find())
     return render_template("books.html", books=books)
 
 @app.route("/register", methods=["GET", "POST"])
