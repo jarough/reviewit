@@ -3,8 +3,8 @@
 
 <h2>Add Book</h2>
 
-<!-- Bootstrap Text Form Code -->
-<form method="POST" action="">
+<!-- Bootstrap Text Form & Button Code -->
+<form method="POST" action="{{ url_for('addbook') }}">
     <div class="mb-3">
         <label for="book_name" class="form-label">Book Name</label>
         <input type="text" name="book_name" class="form-control" id="book_name" required>
@@ -21,7 +21,7 @@
         <label for="summary">Book Summary</label>
         <textarea class="form-control" id="summary" rows="3" name="summary" required></textarea>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Add Book</button>
 </form>
 
 {% endblock %}

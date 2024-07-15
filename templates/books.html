@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <h2>Your Books</h2>
+
     <div class="accordion" id="accordionExample">
         {% for book in books %}
         <div class="accordion-item">
@@ -16,6 +18,7 @@
                 {{ book.author }}
               </strong>
               <p>{{ book.summary }}</p>
+              <p><em>Created by: {{ book.created_by }}</em></p>
             </div>
           </div>
         </div>
