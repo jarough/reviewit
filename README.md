@@ -24,7 +24,7 @@
 ## UX Design
 
 ### Project Goals
-
+Allow users to keep track and search for books they have read
 
 ### User Stories
 
@@ -60,7 +60,7 @@
 
 
 ### Features to be implemented
-
+add images for every book but wasnt sure how to manage with sizes/a lot of books
 
 
 ## Technologies Used
