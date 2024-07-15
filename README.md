@@ -64,10 +64,12 @@
 
 
 ## Technologies Used
-* Python 3.8.6
 * HTML
-* Flask
-
+* CSS
+* JavaScript
+* Bootstrap 5.3
+* Python+Flask
+* MongoDB
 
 ## Testing
 ### Testing User Stories
