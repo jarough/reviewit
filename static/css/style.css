@@ -5,6 +5,10 @@ h2 {
     padding-bottom: 50px;
 }
 
+h3 {
+    align-items: center;
+}
+
 /* register card */
 .card {
     width: 18rem;

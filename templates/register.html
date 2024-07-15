@@ -9,11 +9,13 @@
         <div class="row">
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
-                <input type="text" name="username" class="form-control" id="username">
+                <input type="text" name="username" class="form-control" id="username" minlength="5" maxlength="20"
+                    pattern="^[a-zA-Z0-9]{5,20}$" required>
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordHelp">
+                <input type="password" minlength="5" maxlength="20" class="form-control" id="password" name="password"
+                    aria-describedby="passwordHelp" pattern="^[a-zA-Z0-9]{5,20}$" required>
                 <div id="passwordHelp" class="form-text">We'll never share your password with anyone else.</div>
             </div>
             <div class="row">
