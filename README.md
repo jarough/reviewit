@@ -104,3 +104,5 @@
 ### Code
 * https://getbootstrap.com/docs/5.3/components/navbar/
 https://getbootstrap.com/docs/5.3/components/card/
+https://getbootstrap.com/docs/5.3/components/accordion/
+Tasks Mini-Project
